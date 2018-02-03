@@ -23,7 +23,7 @@ sudo apt-get upgrade
 sudo apt-get install build-essential
 ```
 
-经测试，gazebo官方源中的gazebo8即符合要，下载Preparation-Script中的gazebo8_install.sh文件。终端进入文件所在的文件夹，使用以下命令安装。
+经测试，gazebo官方源中的gazebo8即符合要，下载[Preparation-Script](https://github.com/neolinsu/Aerodroid/tree/master/Preparation-Scripts)中的gazebo8_install.sh文件。终端进入文件所在的文件夹，使用以下命令安装。
 ```
 ./gazebo8_install.sh
 ```
