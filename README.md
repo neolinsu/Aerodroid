@@ -187,7 +187,7 @@ make
 
 进入`collision-avoidance-library/testbed`执行`coav-sim.sh`：
 ```
-AUTOPILOT=AP_APM APM_DIR="~/ardupilot/build/sitl/bin/" ./coav-sim.sh -a QC_STOP_AVOIDANCE -d DI_POLAR_HIST -s ST_GAZEBO_REALSENSE
+AUTOPILOT=AP_APM APM_DIR="(改成绝对路径)/ardupilot/build/sitl/bin/" ./coav-sim.sh -a QC_STOP -d DI_POLAR_HIST -s ST_GAZEBO_REALSENSE
 ```
 参数将会被传递至此前编译的`coav-control`工具，参数所控制的内容如下表所示。具体内容请执行`./coav-control --help`查看。  
 
@@ -197,7 +197,7 @@ AUTOPILOT=AP_APM APM_DIR="~/ardupilot/build/sitl/bin/" ./coav-sim.sh -a QC_STOP_
 |-d|检测碰撞的方法|
 |-s|使用的传感器|
 
-使用gazebo可视化界面查看模拟运行的状况。
+在另一个终端中使用gazebo可视化界面查看模拟运行的状况。
 ```
 gzclient
 ```
