@@ -177,7 +177,7 @@ make
 
 进入`collision-avoidance-library/testbed`执行`coav-sim.sh`：
 ```
-AUTOPILOT=AP_APM APM_DIR="~/ardupilot/build/sitl/bin/"./coav-sim.sh -a QC_STOP_AVOIDANCE -d DI_POLAR_HIST -s ST_GAZEBO_REALSENSE
+AUTOPILOT=AP_APM APM_DIR="~/ardupilot/build/sitl/bin/" ./coav-sim.sh -a QC_STOP_AVOIDANCE -d DI_POLAR_HIST -s ST_GAZEBO_REALSENSE
 ```
 参数将会被传递至此前编译的`coav-control`工具，参数所控制的内容如下表所示。具体内容请执行`./coav-control --help`查看。  
 
