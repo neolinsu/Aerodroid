@@ -55,11 +55,21 @@ sudo apt-get install gcc-avr avrdude avr-libc binutils-avr
 sudo apt-get install python-serial python-wxgtk2.8 python-matplotlib python-opencv python-pexpect python-scipy
 ```
 
-进入ArduCopter文件夹进行编译。编译输出的`arducopter`将在`ardupilot/build/sitl/bin`中。
+进入`ardupilot/ArduCopter`文件夹进行编译。
 ```
 cd ArduCopter
 make sitl
 ```
+
+运行以下指令对sitl进行初始化操作。
+```
+export PATH=$PATH:$HOME/ardupilot/Tools/autotest
+export PATH=/usr/lib/ccache:$PATH
+. ~/.bashrc
+sim_vehicle.py -w
+```
+编译输出的`arducopter`将在`ardupilot/build/sitl/bin`中。
+
 -------------  
 
 ## 02.Intel® RealSense™ SDK
