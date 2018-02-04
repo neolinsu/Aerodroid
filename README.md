@@ -141,7 +141,7 @@ sudo make install
 
 安装依赖包。
 ```
-sudo apt-get install git cmake libglm-dev python-future doxygen libusb-1.0-0-dev libglfw3-dev
+sudo apt-get install git cmake libglm-dev python-future doxygen libusb-1.0-0-dev libglfw3-dev socat
 ```
 
 将项目克隆至本地。
